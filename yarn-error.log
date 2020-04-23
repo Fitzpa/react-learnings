@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @frontendmasters/pet
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @reach/router
 
 PATH: 
   C:\Users\Louie\AppData\Roaming\npm\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Users\Louie\Desktop\code\justForFun\react-learnings\node_modules\.bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Louie\bin;C:\Python38\Scripts;C:\Python38;C:\Windows\system32;C:\Windows;C:\Windows\system32\wbem;C:\Windows\system32\windowspowershell\v1.0;C:\windows\system32;C:\windows;C:\windows\system32\wbem;C:\windows\system32\windowspowershell\v1.0;C:\windows\system32\openssh;C:\program files (x86)\nvidia corporation\physx\common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Program Files\nodejs;C:\ProgramData\chocolatey\bin;C:\Go\bin;C:\Users\Louie\scoop\shims;C:\Users\Louie\AppData\Local\Microsoft\WindowsApps;C:\Users\Louie\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\heroku\bin;C:\Users\Louie\AppData\Local\Yarn\bin;C:\Users\Louie\AppData\Roaming\Composer\vendor\bin;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Users\Louie\AppData\Roaming\npm;C:\Users\Louie\go\bin
@@ -26,6 +26,7 @@ npm manifest:
       "format": "prettier \"src/**/*.{js,html}\" --write",
       "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
       "dev": "parcel src/index.html",
+      "dev:mock": "cross-env PET_MOCK=mock npm run dev",
       "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
@@ -40,6 +41,7 @@ npm manifest:
     "homepage": "https://github.com/Fitzpa/react-learnings#readme",
     "devDependencies": {
       "babel-eslint": "^10.1.0",
+      "cross-env": "^7.0.2",
       "eslint": "^6.8.0",
       "eslint-config-prettier": "^6.11.0",
       "eslint-plugin-import": "^2.20.2",
@@ -50,9 +52,13 @@ npm manifest:
       "prettier": "^2.0.5"
     },
     "dependencies": {
+      "@frontendmasters/pet": "^1.0.3",
       "react": "^16.13.1",
       "react-dom": "^16.13.1"
-    }
+    },
+    "browserslist": [
+      "last 2 Chrome versions"
+    ]
   }
 
 yarn manifest: 
