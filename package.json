@@ -1,0 +1,26 @@
+{
+  "name": "react-learnings",
+  "version": "1.0.0",
+  "description": "This is a repo of things you can do in React that is intended for me to better learn React and have a reference to look back on in the future.",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier \"src/**/*.{js,html}\" --write",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fitzpa/react-learnings.git"
+  },
+  "author": "Louie Fitzpatrick -- Fitzpa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fitzpa/react-learnings/issues"
+  },
+  "homepage": "https://github.com/Fitzpa/react-learnings#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.11.0",
+    "prettier": "^2.0.5"
+  }
+}
