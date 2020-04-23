@@ -1,0 +1,62 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @frontendmasters/pet
+
+PATH: 
+  C:\Users\Louie\AppData\Roaming\npm\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Users\Louie\Desktop\code\justForFun\react-learnings\node_modules\.bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Louie\bin;C:\Python38\Scripts;C:\Python38;C:\Windows\system32;C:\Windows;C:\Windows\system32\wbem;C:\Windows\system32\windowspowershell\v1.0;C:\windows\system32;C:\windows;C:\windows\system32\wbem;C:\windows\system32\windowspowershell\v1.0;C:\windows\system32\openssh;C:\program files (x86)\nvidia corporation\physx\common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Program Files\nodejs;C:\ProgramData\chocolatey\bin;C:\Go\bin;C:\Users\Louie\scoop\shims;C:\Users\Louie\AppData\Local\Microsoft\WindowsApps;C:\Users\Louie\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\heroku\bin;C:\Users\Louie\AppData\Local\Yarn\bin;C:\Users\Louie\AppData\Roaming\Composer\vendor\bin;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Users\Louie\AppData\Roaming\npm;C:\Users\Louie\go\bin
+
+Yarn version: 
+  1.16.0
+
+Node version: 
+  12.16.2
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\Louie\Desktop\code\justForFun\react-learnings\node_modules\deasync\bin\win32-x64-node-12\deasync.node'
+
+npm manifest: 
+  {
+    "name": "react-learnings",
+    "version": "1.0.0",
+    "description": "This is a repo of things you can do in React that is intended for me to better learn React and have a reference to look back on in the future.",
+    "main": "index.js",
+    "scripts": {
+      "format": "prettier \"src/**/*.{js,html}\" --write",
+      "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+      "dev": "parcel src/index.html",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Fitzpa/react-learnings.git"
+    },
+    "author": "Louie Fitzpatrick -- Fitzpa",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/Fitzpa/react-learnings/issues"
+    },
+    "homepage": "https://github.com/Fitzpa/react-learnings#readme",
+    "devDependencies": {
+      "babel-eslint": "^10.1.0",
+      "eslint": "^6.8.0",
+      "eslint-config-prettier": "^6.11.0",
+      "eslint-plugin-import": "^2.20.2",
+      "eslint-plugin-jsx-a11y": "^6.2.3",
+      "eslint-plugin-react": "^7.19.0",
+      "eslint-plugin-react-hooks": "^3.0.0",
+      "parcel-bundler": "^1.12.4",
+      "prettier": "^2.0.5"
+    },
+    "dependencies": {
+      "react": "^16.13.1",
+      "react-dom": "^16.13.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
