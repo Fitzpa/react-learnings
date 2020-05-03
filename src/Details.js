@@ -9,6 +9,7 @@ import ThemeContext from "./ThemeContext";
 class Details extends React.Component {
   state = { loading: true, showModal: false };
   componentDidMount() {
+    // eslint-disable-next-line
     pet.animal(this.props.id).then(({ animal }) => {
       this.setState({
         url: animal.url,
@@ -20,6 +21,7 @@ class Details extends React.Component {
         breed: animal.breeds.primary,
         loading: false,
       });
+      // eslint-disable-next-line
     }, console.error);
   }
   toggleModal = () => this.setState({ showModal: !this.state.showModal });
