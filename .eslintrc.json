@@ -8,7 +8,6 @@
     "prettier/react"
   ],
   "rules": {
-    "react/props-types": 0,
     "no-console": 1,
     "react-hooks/rules-of-hooks": 2,
     "react-hooks/exhaustive-deps": 1

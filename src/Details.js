@@ -1,10 +1,11 @@
 import React from "react";
 import pet from "@frontendmasters/pet";
 import { navigate } from "@reach/router";
+import { connect } from "react-redux";
 import Modal from "./Modal";
 import Carousel from "./Carousel";
 import ErrorBoundary from "./ErrorBoundary";
-import ThemeContext from "./ThemeContext";
+import changeTheme from "./actionCreators/changeTheme";
 
 class Details extends React.Component {
   state = { loading: true, showModal: false };
@@ -45,17 +46,12 @@ class Details extends React.Component {
         <div>
           <h1>{name}</h1>
           <h2>{`${animal} - ${breed} - ${location}`}</h2>
-          {/* This how class based components must use context */}
-          <ThemeContext.Consumer>
-            {([theme]) => (
-              <button
-                onClick={this.toggleModal}
-                style={{ backgroundColor: theme }}
-              >
-                Adopt {name}
-              </button>
-            )}
-          </ThemeContext.Consumer>
+          <button
+            onClick={this.toggleModal}
+            style={{ backgroundColor: this.props.theme }}
+          >
+            Adopt {name}
+          </button>
           <p>{description}</p>
           {showModal ? (
             <Modal>
@@ -73,20 +69,15 @@ class Details extends React.Component {
     );
   }
 }
-
-// const Details = (props) => {
-//   return (
-// This prints everything the router is providing to the page. This is very useful for testing what is coming through.
-// <pre>
-//   <code>{JSON.stringify(props, null, 4)}</code>
-// </pre>
-//   );
-// };
+// This will pull things out of redux and hand it to the component
+// This is Read property
+const mapStateToProps = ({ theme }) => ({ theme });
+const WrappedDetails = connect(mapStateToProps)(Details);
 
 export default function DetailsWithErrorBoundary(props) {
   return (
     <ErrorBoundary>
-      <Details {...props} />
+      <WrappedDetails {...props} />
     </ErrorBoundary>
   );
 }

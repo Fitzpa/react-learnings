@@ -1,17 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import { render } from "react-dom";
 import { Router } from "@reach/router";
+import { Provider } from "react-redux";
 import SearchParams from "./SearchParams";
 import Details from "./Details";
-import ThemeContext from "./ThemeContext";
 import NavBar from "./NavBar";
+import store from "./store";
 
 const App = () => {
-  const themeHook = useState("darkblue");
-
   return (
     <React.StrictMode>
-      <ThemeContext.Provider value={themeHook}>
+      <Provider store={store}>
         <div>
           <NavBar />
           <Router>
@@ -19,7 +18,7 @@ const App = () => {
             <Details path="/details/:id" />
           </Router>
         </div>
-      </ThemeContext.Provider>
+      </Provider>
     </React.StrictMode>
   );
 };
