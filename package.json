@@ -48,5 +48,31 @@
   },
   "browserslist": [
     "last 2 Chrome versions"
-  ]
+  ],
+  "comments": {
+    "devDependencies": [
+      "@babe/core === Babel compiler core.",
+      "@babe/plugin-proposal-class-properties === This plugin transforms static class properties as well as properties declared with the property initializer syntax.",
+      "@babe/preset-env === A Babel preset for each environment.",
+      "@babe/preset-react === A Babel preset for all React plugins.",
+      "@babe/eslint === A custom parser for ESlint.",
+      "cross-env === Run scripts that set and use environment variables across platforms.",
+      "eslint === An AST-based pattern checker for JavaScript.",
+      "eslint-config-prettier === Turns off all rules that are unnecessary or might conflict with Prettier.",
+      "eslint-plugin-import === Import with sanity.",
+      "eslint-plugin-jsx-a11y === A static AST checker for accessibility rules on JSX elements.",
+      "eslint-plugin-react === React specific linting rules for ESlint.",
+      "eslint-plugin-react-hooks === ESlint rules for React Hooks.",
+      "parcel-bundler === Blazing fast, zero confiduration web application bundler.",
+      "prettier === An opinionated code formatter."
+    ],
+    "dependencies": [
+      "@emotion/babel-preset-css-prop === A babel preset to automatically enable emotion's css prop.",
+      "@emotion/core === Simple Styling in React.",
+      "@emotion/styled === Styled API for emotion.",
+      "@reach/router === Next generation Routing for React.",
+      "react === JavaScript library for building user interfaces.",
+      "react-dom === React package for working with the DOM."
+    ]
+  }
 }
